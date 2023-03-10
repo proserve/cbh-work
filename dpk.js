@@ -1,7 +1,14 @@
 const {getPartitionKeyFromData} = require('./utils')
 const {TRIVIAL_PARTITION_KEY, MAX_PARTITION_KEY_LENGTH} = require('./config')
 
-exports.deterministicPartitionKey = (event) => {
+
+/**
+ * TODO: detailed explanation
+ *
+ * @param event: event payload
+ * @return string: a Deterministic Partition Key derived from event data
+ */
+exports.generateDeterministicPartitionKey = (event) => {
 
   let candidate = TRIVIAL_PARTITION_KEY;
 

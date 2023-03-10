@@ -9,3 +9,7 @@ You've been asked to refactor the function `deterministicPartitionKey` in [`dpk.
 You will be graded on the exhaustiveness and quality of your unit tests, the depth of your refactor, and the level of insight into your thought process provided by the written explanation.
 
 ## Your Explanation Here
+1. Create a new config module to store config variables, so they can be reused globally
+2. rename function to be `generateDeterministicPartitionKey` to reflect that the function has return value
+3. added JS doc to the function 
+4. Extract hash generation function to a new utils module for abstraction, re-usability, and to hide implementation details 
